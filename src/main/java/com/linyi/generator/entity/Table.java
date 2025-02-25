@@ -1,5 +1,7 @@
 package com.linyi.generator.entity;
 
+import lombok.Data;
+
 /**
  * @Author: linyi
  * @Date: 2025/2/25
@@ -7,6 +9,7 @@ package com.linyi.generator.entity;
  * @Version: 1.0
  * @Description: 表属性
  */
+@Data
 public class Table {
     /**
      * 名称
