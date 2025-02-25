@@ -17,25 +17,24 @@ public interface ${className}Service extends IService<${className}> {
     /**
      * 分页查询
      *
-     * @param pageResponse 分页实体
-     * @param ${className?uncap_first} 查询实体
+     * @param ${className?uncap_first}QueryVo 分页查询实体
      * @return PageResult<${className}>
      */
-    PageResult<${className}> ${className?uncap_first}Page(PageResponse pageResponse,${className} ${className?uncap_first});
+    PageResult<${className}> ${className?uncap_first}Page(${className}QueryVo ${className?uncap_first}QueryVo);
 
     /**
      * 新增
      *
-     * @param ${className?uncap_first} ${className?uncap_first}
+     * @param ${className?uncap_first}AddVo 新增实体
      * @return Boolean
      */
-    Boolean ${className?uncap_first}Add(${className} ${className?uncap_first});
+    Boolean ${className?uncap_first}Add(${className}AddVo ${className?uncap_first}AddVo);
 
     /**
      * 修改
      *
-     * @param ${className?uncap_first} ${className?uncap_first}
+     * @param ${className?uncap_first}UpadteVo 修改实体
      * @return Boolean
      */
-    Boolean ${className?uncap_first}Update(${className} ${className?uncap_first});
+    Boolean ${className?uncap_first}Update(${className}UpdateVo ${className?uncap_first}UpdateVo);
 }

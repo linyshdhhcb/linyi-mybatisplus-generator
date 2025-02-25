@@ -4,6 +4,7 @@ import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import ${basePackage}.${entityPackage}.${className};
 import ${basePackage}.${servicePackage}.${className}Service;
+import ${basePackage}.${entityPackage}.vo.*;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -40,26 +41,25 @@ public class ${className}Controller{
     /**
      * 分页查询${tableComment}
      *
-     * @param pageResponse 分页实体
-     * @param ${className?uncap_first} 查询实体
+     * @param ${className?uncap_first}QueryVo 分页查询实体
      * @return Result<PageResult<${className}>> 返回分页数据
      */
     @Operation(summary = "分页查询${tableComment}")
     @PostMapping("/${className?uncap_first}Page")
-    public Result<PageResult<${className}>> ${className?uncap_first}Page(@RequestBody PageResponse pageResponse, @RequestBody ${className} ${className?uncap_first}) {
-        return Result.success(${className?uncap_first}Service.${className?uncap_first}Page(pageResponse,${className?uncap_first}));
+    public Result<PageResult<${className}>> ${className?uncap_first}Page(@RequestBody ${className}QueryVo ${className?uncap_first}QueryVo) {
+        return Result.success(${className?uncap_first}Service.${className?uncap_first}Page(${className?uncap_first}QueryVo));
     }
 
     /**
      * 新增${tableComment}
      *
-     * @param ${className?uncap_first} 新增实体
+     * @param ${className?uncap_first}AddVo 新增实体
      * @return Result<Boolean> 返回结果(true/false)
      */
     @Operation(summary = "新增${tableComment}")
     @PostMapping("/${className?uncap_first}Add")
-    public Result<Boolean> ${className?uncap_first}Add(@RequestBody ${className} ${className?uncap_first}) {
-        return Result.success(${className?uncap_first}Service.${className?uncap_first}Add(${className?uncap_first}));
+    public Result<Boolean> ${className?uncap_first}Add(@RequestBody ${className}AddVo ${className?uncap_first}AddVo) {
+        return Result.success(${className?uncap_first}Service.${className?uncap_first}Add(${className?uncap_first}AddVo));
     }
 
     /**
@@ -94,8 +94,8 @@ public class ${className}Controller{
      */
     @Operation(summary = "根据主键ID修改${tableComment}")
     @PutMapping("${className?uncap_first}Update")
-    public Result<Boolean> ${className?uncap_first}Update(@RequestBody ${className} ${className?uncap_first}) {
-        return Result.success(${className?uncap_first}Service.${className?uncap_first}Update(${className?uncap_first}));
+    public Result<Boolean> ${className?uncap_first}Update(@RequestBody ${className}UpdateVo ${className?uncap_first}UpdateVo) {
+        return Result.success(${className?uncap_first}Service.${className?uncap_first}Update(${className?uncap_first}UpdateVo));
     }
 
     /**
