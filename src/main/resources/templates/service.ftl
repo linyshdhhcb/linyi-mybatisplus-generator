@@ -1,6 +1,7 @@
 package ${basePackage}.${servicePackage};
 
 import ${basePackage}.${entityPackage}.${className};
+import ${basePackage}.${entityPackage}.vo.*;
 import com.linyi.pig.common.model.*;
 import com.baomidou.mybatisplus.extension.service.IService;
 
@@ -33,7 +34,7 @@ public interface ${className}Service extends IService<${className}> {
     /**
      * 修改
      *
-     * @param ${className?uncap_first}UpadteVo 修改实体
+     * @param ${className?uncap_first}UpdateVo 修改实体
      * @return Boolean
      */
     Boolean ${className?uncap_first}Update(${className}UpdateVo ${className?uncap_first}UpdateVo);

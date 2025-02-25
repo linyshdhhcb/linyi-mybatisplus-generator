@@ -17,6 +17,7 @@ import org.springframework.web.bind.annotation.*;
 import com.linyi.pig.common.model.*;
 
 import java.io.Serializable;
+import java.util.List;
 
 
 /**
@@ -89,7 +90,7 @@ public class ${className}Controller{
     /**
      * 根据主键ID修改${tableComment}
      *
-     * @param ${className?uncap_first} 修改实体
+     * @param ${className?uncap_first}UpdateVo 修改实体
      * @return Result<Boolean> 返回结果(true/false)
      */
     @Operation(summary = "根据主键ID修改${tableComment}")

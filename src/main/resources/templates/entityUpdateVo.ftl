@@ -1,6 +1,5 @@
 package ${basePackage}.${entityPackage}.vo.${className?uncap_first};
 
-
 import java.io.Serializable;
 
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -23,5 +22,9 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Schema(name = "${tableComment}修改实体")
 public class ${className}UpdateVo implements Serializable {
+    /**
+    * 主键ID
+    */
+    private Serializable id;
 
 }

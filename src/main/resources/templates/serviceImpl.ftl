@@ -3,6 +3,7 @@ package ${basePackage}.${serviceImplPackage};
 import ${basePackage}.${entityPackage}.${className};
 import ${basePackage}.${mapperPackage}.${className}Mapper;
 import ${basePackage}.${servicePackage}.${className}Service;
+import ${basePackage}.${entityPackage}.vo.*;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;
@@ -17,6 +18,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 
 import java.util.Optional;
+import java.util.List;
 
 /**
 * @Author: linyi
@@ -60,9 +62,9 @@ public class ${className}ServiceImpl extends ServiceImpl<${className}Mapper, ${c
     @Override
     public Boolean ${className?uncap_first}Update(${className}UpdateVo ${className?uncap_first}UpdateVo){
         //根据ID查询数据
-        ${className} byId=this.getById(${className?uncap_first}.getId());
+        ${className} byId=this.getById(${className?uncap_first}UpdateVo.getId());
         //判断数据是否存在
-        if(Optional.ofNullable(${className?uncap_first}).isEmpty()){
+        if(Optional.ofNullable(byId).isEmpty()){
             log.error("数据不存在");
             return false;
         }

@@ -1,6 +1,5 @@
 package ${basePackage}.${entityPackage}.vo.${className?uncap_first};
 
-
 import java.io.Serializable;
 
 import io.swagger.v3.oas.annotations.media.Schema;
