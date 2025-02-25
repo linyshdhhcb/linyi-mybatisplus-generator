@@ -1,6 +1,6 @@
 package com.linyi.generator.entity;
 
-import com.linyi.utils.DateUtil;
+import com.linyi.generator.utils.DateUtil;
 import lombok.Data;
 
 import java.time.LocalDateTime;

@@ -1,4 +1,4 @@
-package com.linyi.utils;
+package com.linyi.generator.utils;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

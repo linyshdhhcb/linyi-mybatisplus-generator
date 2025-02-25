@@ -1,4 +1,4 @@
-package com.linyi.utils;
+package com.linyi.generator.utils;
 
 import com.baomidou.mybatisplus.core.toolkit.StringPool;
 import lombok.extern.slf4j.Slf4j;

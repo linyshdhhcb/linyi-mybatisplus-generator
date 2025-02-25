@@ -14,4 +14,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 @SpringBootApplication
 @EnableConfigurationProperties({SysProperties.class})// 开启配置文件注入
 public class GeneratorApplication {
+    public static void main(String[] args) {
+        org.springframework.boot.SpringApplication.run(GeneratorApplication.class, args);
+    }
 }

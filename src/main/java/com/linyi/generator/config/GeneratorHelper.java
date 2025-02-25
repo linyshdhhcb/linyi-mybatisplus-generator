@@ -6,7 +6,7 @@ import com.linyi.generator.constant.GeneratorConstant;
 import com.linyi.generator.entity.Column;
 import com.linyi.generator.entity.FieldType;
 import com.linyi.generator.entity.GeneratorConfig;
-import com.linyi.utils.StringUtil;
+import com.linyi.generator.utils.StringUtil;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateExceptionHandler;
@@ -17,8 +17,6 @@ import org.springframework.stereotype.Component;
 import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.List;
-
-import static com.linyi.generator.constant.GeneratorConstant.BASE_PATH;
 
 /**
  * @Author: linyi
@@ -230,7 +228,7 @@ public class GeneratorHelper {
         Configuration configuration = new Configuration(Configuration.VERSION_2_3_20);
 
         // 获取模版引擎地址，即模板文件所在的路径
-        String templatePath = this.getClass().getResource("/generator/templates/").getPath();
+        String templatePath = this.getClass().getResource("/templates/").getPath();
 
         // 设置Freemarker配置对象的模板加载目录
         configuration.setDirectoryForTemplateLoading(new File(templatePath));
