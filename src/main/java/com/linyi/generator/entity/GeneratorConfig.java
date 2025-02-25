@@ -15,9 +15,14 @@ import java.time.LocalDateTime;
 @Data
 public class GeneratorConfig {
 
+    /**
+     * 是否去除表前缀，默认为0
+     */
     public static final String TRIM_YES = "1";
     public static final String TRIM_NO = "0";
-
+    /**
+     * 生成代码的包名
+     */
     private String generatorPackage;
 
     /**

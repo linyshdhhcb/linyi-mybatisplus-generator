@@ -30,7 +30,7 @@ import java.util.List;
 public class GeneratorHelper {
 
     /**
-     * 根据列信息和配置生成实体类文件
+     * 根据列信息和配置生成实体类文件（AddVo、UpdateVo、QueryVo一起生成）
      *
      * @param columns 列信息列表，用于生成实体类的属性
      * @param configure 生成器配置，包含生成实体类所需的信息
@@ -67,7 +67,54 @@ public class GeneratorHelper {
         data.put("columns", columns);
         // 调用生成文件方法，根据模板和数据生成实体类文件
         this.generateFileByTemplate(templateName, entityFile, data);
+        //生成VO文件
+        generateEntityAddVoFile(configure,GeneratorConstant.ENTITY_ADDVO_TEMPLATE, GeneratorConstant.ADDVO_ENTITY_SUFFIX,data);
+        generateEntityUpdateVoFile(configure,GeneratorConstant.ENTITY_UPDATEVO_TEMPLATE, GeneratorConstant.UPDATEVO_ENTITY_SUFFIX,data);
+        generateEntityQueryVoFile(configure,GeneratorConstant.ENTITY_QUERYVO_TEMPLATE, GeneratorConstant.QUERYVO_ENTITY_SUFFIX,data);
+
+        log.info("生成实体类文件：{}", path);
     }
+
+    /**
+     * 生成实体类查询VO文件
+     * @param configure
+     * @param entityQueryvoTemplate
+     * @param queryvoEntitySuffix
+     * @param data
+     * @throws Exception
+     */
+    private void generateEntityQueryVoFile(GeneratorConfig configure, String entityQueryvoTemplate, String queryvoEntitySuffix, JSONObject data) throws Exception {
+        File file = new File(getFilePath(configure, configure.getEntityPackage(), queryvoEntitySuffix, false));
+        this.generateFileByTemplate(GeneratorConstant.ENTITY_QUERYVO_TEMPLATE, file, data);
+    }
+
+    /**
+     * 生成实体类更新VO文件
+     * @param configure
+     * @param entityUpdatevoTemplate
+     * @param updatevoEntitySuffix
+     * @param data
+     * @throws Exception
+     */
+
+    private void generateEntityUpdateVoFile(GeneratorConfig configure, String entityUpdatevoTemplate, String updatevoEntitySuffix, JSONObject data) throws Exception {
+        File file = new File(getFilePath(configure, configure.getEntityPackage(), updatevoEntitySuffix, false));
+        this.generateFileByTemplate(GeneratorConstant.ENTITY_UPDATEVO_TEMPLATE, file, data);
+    }
+
+    /**
+     * 生成实体类添加VO文件
+     * @param configure
+     * @param entityAddvoTemplate
+     * @param addvoEntitySuffix
+     * @param data
+     * @throws Exception
+     */
+    private void generateEntityAddVoFile(GeneratorConfig configure, String entityAddvoTemplate, String addvoEntitySuffix, JSONObject data) throws Exception {
+        File file = new File(getFilePath(configure, configure.getEntityPackage(), addvoEntitySuffix, false));
+        this.generateFileByTemplate(GeneratorConstant.ENTITY_ADDVO_TEMPLATE, file, data);
+    }
+
 
     /**
      * 根据配置信息生成Mapper文件
@@ -87,6 +134,8 @@ public class GeneratorHelper {
         File mapperFile = new File(path);
         // 根据模板生成Mapper文件
         generateFileByTemplate(templateName, mapperFile, toJsonObject(configure));
+
+        log.info("生成Mapper文件：{}", path);
     }
 
     /**
@@ -107,6 +156,8 @@ public class GeneratorHelper {
         File serviceFile = new File(path);
         // 根据模板生成服务层文件，传入配置信息作为参数
         generateFileByTemplate(templateName, serviceFile, toJsonObject(configure));
+
+        log.info("生成服务层文件：{}", path);
     }
     /**
      * 根据列信息和配置生成服务实现类文件
@@ -126,6 +177,8 @@ public class GeneratorHelper {
         File serviceImplFile = new File(path);
         // 根据模板生成服务实现类文件
         generateFileByTemplate(templateName, serviceImplFile, toJsonObject(configure));
+
+        log.info("生成服务实现类文件：{}", path);
     }
 
     /**
@@ -153,6 +206,8 @@ public class GeneratorHelper {
 
         // 通过模板生成Controller文件，传入配置信息作为参数
         generateFileByTemplate(templateName, controllerFile, toJsonObject(configure));
+
+        log.info("生成Controller文件：{}", path);
     }
 
     /**
@@ -182,6 +237,8 @@ public class GeneratorHelper {
 
         // 根据模板名称、文件路径和数据生成Mapper XML文件
         generateFileByTemplate(templateName, mapperXmlFile, data);
+
+        log.info("生成Mapper XML文件：{}", path);
     }
 
 
@@ -253,11 +310,17 @@ public class GeneratorHelper {
     private static String getFilePath(GeneratorConfig configure, String packagePath, String suffix, boolean serviceInterface) {
 
         // 拼接Java文件的基础路径
-        String filePath = configure.getJavaPath() + GeneratorConstant.BASE_PATH;
+        String filePath = configure.getJavaPath();
 
         // 将包路径转换为文件路径 如：com.linyi. + . + （entity、mapper、controller、service）
         filePath += packageConvertPath(configure.getBasePackage() + "." + packagePath);
         log.info("基础包：" + filePath);
+
+        //如果后缀是AddVo.java、UpdateVo.java、QueryVo.java时。需要特殊处理
+        if (GeneratorConstant.ADDVO_ENTITY_SUFFIX.equals(suffix) || GeneratorConstant.UPDATEVO_ENTITY_SUFFIX.equals(suffix) || GeneratorConstant.QUERYVO_ENTITY_SUFFIX.equals(suffix)) {
+            // 拼接Java文件的路径，并添加实体类名 package ${basePackage}.${entityPackage}.vo.${className?uncap_first};
+            filePath +="/vo/" + StringUtils.uncapitalize(configure.getClassName())+"/";
+        }
 
         // 如果后缀是mapper.xml，表示是Mapper XML文件，需要特殊处理路径
         if (GeneratorConstant.MAPPERXML_FILE_SUFFIX.equals(suffix)) {
@@ -273,10 +336,9 @@ public class GeneratorHelper {
     }
 
 
+
     /**
      * 将Java包名转换为对应的文件路径格式
-     * 此方法用于将Java包名称中的点('.')替换为斜线('/')，以用于文件系统路径的表示
-     * 如果包名中包含点('.')，则将其替换为斜线('/')；否则，直接在包名前后添加斜线
      *
      * @param packageName Java包名，例如com.example.package
      * @return 转换后的文件路径格式，例如/com/example/package/

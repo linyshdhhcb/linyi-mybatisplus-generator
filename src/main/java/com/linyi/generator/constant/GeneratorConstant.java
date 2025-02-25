@@ -22,6 +22,18 @@ public class GeneratorConstant {
      */
     public static final String JAVA_FILE_SUFFIX = ".java";
     /**
+     * 新增实体类文件后缀
+     */
+    public static final String ADDVO_ENTITY_SUFFIX = "AddVo.java";
+    /**
+     * 修改实体类文件后缀
+     */
+    public static final String UPDATEVO_ENTITY_SUFFIX = "UpdateVo.java";
+    /**
+     * 查询实体类文件后缀
+     */
+    public static final String QUERYVO_ENTITY_SUFFIX = "QueryVo.java";
+    /**
      * mapper文件类型后缀
      */
     public static final String MAPPER_FILE_SUFFIX = "Mapper.java";
@@ -45,6 +57,18 @@ public class GeneratorConstant {
      * entity模板
      */
     public static final String ENTITY_TEMPLATE = "entity.ftl";
+    /**
+     * entityAddVo模板
+     */
+    public static final String ENTITY_ADDVO_TEMPLATE = "entityAddVo.ftl";
+    /**
+     * entityUpdateVo模板
+     */
+    public static final String ENTITY_UPDATEVO_TEMPLATE = "entityUpdateVo.ftl";
+    /**
+     * entityQueryVo模板
+     */
+    public static final String ENTITY_QUERYVO_TEMPLATE = "entityQueryVo.ftl";
     /**
      * mapper模板
      */

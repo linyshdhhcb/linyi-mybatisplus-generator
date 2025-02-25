@@ -20,6 +20,6 @@ import org.springframework.context.annotation.PropertySource;
 @Data
 public class SysProperties {
 
-    private Integer a;
+
     private GeneratorConfig generator;
 }
