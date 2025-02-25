@@ -1,4 +1,4 @@
-package com.linyi.properties;
+package com.linyi.generator.config;
 
 
 import com.linyi.generator.entity.GeneratorConfig;
