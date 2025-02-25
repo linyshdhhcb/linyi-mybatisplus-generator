@@ -19,6 +19,7 @@ import org.springframework.context.annotation.PropertySource;
 @ConfigurationProperties(prefix = "sys") //从全局配置文件取值
 @Data
 public class SysProperties {
+
     private Integer a;
     private GeneratorConfig generator;
 }

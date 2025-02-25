@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
  * @Date: 2025/2/24
  * @ClassName: GeneratorConfig
  * @Version: 1.0
- * @Description: 代码生成配置
+ * @Description: 代码生成配置属性
  */
 @Data
 public class GeneratorConfig {
