@@ -3,7 +3,7 @@ package ${basePackage}.${serviceImplPackage};
 import ${basePackage}.${entityPackage}.${className};
 import ${basePackage}.${mapperPackage}.${className}Mapper;
 import ${basePackage}.${servicePackage}.${className}Service;
-import ${basePackage}.${entityPackage}.vo.*;
+import ${basePackage}.${entityPackage}.vo.${className?uncap_first}.*;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeanUtils;

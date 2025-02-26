@@ -1,8 +1,7 @@
 package ${basePackage}.${servicePackage};
 
 import ${basePackage}.${entityPackage}.${className};
-import ${basePackage}.${entityPackage}.vo.*;
-import com.linyi.pig.common.model.*;
+import ${basePackage}.${entityPackage}.vo.${className?uncap_first}.*;
 import com.baomidou.mybatisplus.extension.service.IService;
 
 import java.util.List;

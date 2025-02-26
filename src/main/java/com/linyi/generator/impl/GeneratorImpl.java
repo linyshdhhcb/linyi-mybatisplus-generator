@@ -78,7 +78,9 @@ public class GeneratorImpl {
         for (Table table : tables) {
             try {
                 // 根据表名和表备注生成代码
-                generate(schemaName, table.getName(), table.getRemark());
+                if(tableNames.contains(table.getName())){
+                    generate(schemaName, table.getName(), table.getRemark());
+                }
             } catch (Exception e) {
                 log.error("代码生成异常...", e);
             }
