@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2217a5dc-1416-4514-9b57-8602613d9f75" name="Changes" comment="添加Vo实体">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/linyi/generator/impl/GeneratorImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/linyi/generator/impl/GeneratorImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/controller.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/controller.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/entityQueryVo.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/entityQueryVo.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/service.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/service.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/serviceImpl.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/serviceImpl.ftl" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GiteePullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;hsdchb&quot;
+  }
+}</component>
+  <component name="GiteePullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="cee0943b-6b0c-4c27-9263-34a604e067e1" />
+        <option name="url" value="https://gitee.com/hsdchb/linyi-mybatisplus-generator.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Users\a1830\.m2\apache-maven-3.9.6-bin\apache-maven-3.9.6" />
+        <option name="useMavenConfig" value="false" />
+        <option name="userSettingsFile" value="C:\Users\a1830\.m2\apache-maven-3.9.6-bin\apache-maven-3.9.6\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="17" />
+    <option name="vmOptions" value="-Darchetype=Internal" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2tUS680zElAUiFYmnhkpexvH6Fl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.SubsetChecker.executor&quot;: &quot;Run&quot;,
+    &quot;Maven.linyi-mybatisplus-generator [clean].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.GeneratorApplication.executor&quot;: &quot;Run&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Intellij_IDEA/PROD/generator/linyi-mybatisplus-generator&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Intellij_IDEA\PROD\linyi-mybatisplus-generator\src\main\resources\mapper\generator" />
+      <recent name="C:\Intellij_IDEA\PROD\linyi-mybatisplus-generator\src\main\resources\mapper" />
+      <recent name="C:\Intellij_IDEA\PROD\linyi-mybatisplus-generator\src\main\resources\templates" />
+      <recent name="C:\Intellij_IDEA\PROD\linyi-mybatisplus-generator\src\main\resources" />
+      <recent name="C:\Intellij_IDEA\PROD\linyi-mybatisplus-generator\src\main\java\com\linyi" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Spring Boot.GeneratorApplication">
+    <configuration name="SubsetChecker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.linyi.generator.utils.SubsetChecker" />
+      <module name="linyi-mybatisplus-generator" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.linyi.generator.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="easy-teach" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.linyi.GeneratorApplication" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.linyi.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GeneratorApplication" />
+        <item itemvalue="Application.SubsetChecker" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2217a5dc-1416-4514-9b57-8602613d9f75" name="Changes" comment="" />
+      <created>1740404983545</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740404983545</updated>
+      <workItem from="1740404984666" duration="978000" />
+      <workItem from="1740441920128" duration="15000" />
+      <workItem from="1740462216568" duration="5000" />
+      <workItem from="1740462231843" duration="19000" />
+      <workItem from="1740462305154" duration="123000" />
+      <workItem from="1740462435039" duration="77000" />
+      <workItem from="1740462518085" duration="7089000" />
+      <workItem from="1740470721870" duration="8024000" />
+      <workItem from="1740530151488" duration="551000" />
+      <workItem from="1740547596481" duration="203000" />
+      <workItem from="1740580807469" duration="351000" />
+    </task>
+    <task id="LOCAL-00001" summary="初始化">
+      <option name="closed" value="true" />
+      <created>1740405523088</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1740405523088</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor(generator): 新增 GeneratorHelper 类并迁移 SysProperties&#10;&#10;- 新增 GeneratorHelper 类，用于代码生成辅助功能&#10;- 将 SysProperties 类从 properties 包迁移到 generator.config 包">
+      <option name="closed" value="true" />
+      <created>1740462551975</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1740462551975</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat: 添加代码生成器模板文件&#10;&#10;- 新增 application.yml 配">
+      <option name="closed" value="true" />
+      <created>1740462971073</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1740462971073</updated>
+    </task>
+    <task id="LOCAL-00004" summary="feat(entity): 添加代码生成器实体类&#10;&#10;- 新增 Column 类，用于表示字段属性&#10;- 新增 FieldType 类，用于定义字段类型常量&#10;- 新增 Table 类，用于表示表属性&#10;- 更新 GeneratorConfig 类的描述&#10;- 在 SysProperties 中添加 generator 配置属性">
+      <option name="closed" value="true" />
+      <created>1740463268817</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1740463268817</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat(entity): 添加代码生成器实体类&#10;&#10;- 新增 Column 类，用于表示字段属性&#10;- 新增 FieldType 类，用于定义字段类型常量&#10;- 新增 Table 类，用于表示表属性&#10;- 更新 GeneratorConfig 类的描述&#10;- 在 SysProperties 中添加 generator 配置属性">
+      <option name="closed" value="true" />
+      <created>1740463338398</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1740463338398</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat(generator): 添加代码生成器功能&#10;&#10;- 新增 GeneratorApplication 类作为 Spring Boot 应用的入口- 添加 GeneratorConstant 类定义生成器相关的常量&#10;- 在 GeneratorHelper 类中实现代码生成的核心逻辑，包括实体类、Mapper、Service、Controller 等文件的生成- 优化文件路径生成和模板处理机制">
+      <option name="closed" value="true" />
+      <created>1740464404507</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1740464404507</updated>
+    </task>
+    <task id="LOCAL-00007" summary="完成">
+      <option name="closed" value="true" />
+      <created>1740465905129</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1740465905129</updated>
+    </task>
+    <task id="LOCAL-00008" summary="添加Vo">
+      <option name="closed" value="true" />
+      <created>1740474320928</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1740474320928</updated>
+    </task>
+    <task id="LOCAL-00009" summary="添加Vo">
+      <option name="closed" value="true" />
+      <created>1740474325730</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1740474325730</updated>
+    </task>
+    <task id="LOCAL-00010" summary="添加Vo">
+      <option name="closed" value="true" />
+      <created>1740474339625</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1740474339625</updated>
+    </task>
+    <task id="LOCAL-00011" summary="添加Vo实体">
+      <option name="closed" value="true" />
+      <created>1740475012879</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1740475012879</updated>
+    </task>
+    <task id="LOCAL-00012" summary="添加Vo实体">
+      <option name="closed" value="true" />
+      <created>1740476363668</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1740476363668</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="refactor(generator): 新增 GeneratorHelper 类并迁移 SysProperties&#10;&#10;- 新增 GeneratorHelper 类，用于代码生成辅助功能&#10;- 将 SysProperties 类从 properties 包迁移到 generator.config 包" />
+    <MESSAGE value="feat: 添加代码生成器模板文件" />
+    <MESSAGE value="feat(entity): 添加代码生成器实体类&#10;&#10;- 新增 Column 类，用于表示字段属性&#10;- 新增 FieldType 类，用于定义字段类型常量&#10;- 新增 Table 类，用于表示表属性&#10;- 更新 GeneratorConfig 类的描述&#10;- 在 SysProperties 中添加 generator 配置属性" />
+    <MESSAGE value="feat(generator): 添加代码生成器功能&#10;&#10;- 新增 GeneratorApplication 类作为 Spring Boot 应用的入口- 添加 GeneratorConstant 类定义生成器相关的常量&#10;- 在 GeneratorHelper 类中实现代码生成的核心逻辑，包括实体类、Mapper、Service、Controller 等文件的生成- 优化文件路径生成和模板处理机制" />
+    <MESSAGE value="完成" />
+    <MESSAGE value="添加Vo" />
+    <MESSAGE value="添加Vo实体" />
+    <option name="LAST_COMMIT_MESSAGE" value="添加Vo实体" />
+  </component>
+</project>
