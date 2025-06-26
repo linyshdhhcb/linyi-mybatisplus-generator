@@ -2,6 +2,7 @@ package ${basePackage}.${controllerPackage};
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
+import ${basePackage}.common.model.*;
 import ${basePackage}.${entityPackage}.${className};
 import ${basePackage}.${servicePackage}.${className}Service;
 import ${basePackage}.${entityPackage}.vo.${className?uncap_first}.*;
@@ -14,7 +15,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.*;
-import com.linyi.pig.common.model.*;
 
 import java.io.Serializable;
 import java.util.List;

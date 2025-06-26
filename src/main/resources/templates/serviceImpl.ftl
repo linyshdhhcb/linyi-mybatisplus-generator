@@ -1,5 +1,6 @@
 package ${basePackage}.${serviceImplPackage};
 
+import ${basePackage}.common.model.*;
 import ${basePackage}.${entityPackage}.${className};
 import ${basePackage}.${mapperPackage}.${className}Mapper;
 import ${basePackage}.${servicePackage}.${className}Service;
@@ -11,7 +12,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.transaction.annotation.Propagation;
-import com.linyi.pig.common.model.*;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
@@ -46,7 +46,7 @@ public class ${className}ServiceImpl extends ServiceImpl<${className}Mapper, ${c
         //查询数据
         Page<${className}> pageNew = ${className?uncap_first}Mapper.selectPage(page, queryWrapper);
         //返回分页数据
-        return new PageResult<>(pageNew.getRecords(), pageNew.getTotal(), pageNew.getPages(), ${className?uncap_first}QueryVo.getPageNum(), ${className?uncap_first}QueryVo.getPageSize());
+        return new PageResult<>(${className?uncap_first}QueryVo.getPageNum(), ${className?uncap_first}QueryVo.getPageSize(), pageNew.getRecords(), pageNew.getTotal());
     }
 
     @Override

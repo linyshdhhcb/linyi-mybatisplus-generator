@@ -1,5 +1,6 @@
 package ${basePackage}.${servicePackage};
 
+import ${basePackage}.common.model.*;
 import ${basePackage}.${entityPackage}.${className};
 import ${basePackage}.${entityPackage}.vo.${className?uncap_first}.*;
 import com.baomidou.mybatisplus.extension.service.IService;

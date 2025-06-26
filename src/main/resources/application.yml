@@ -84,9 +84,3 @@ mybatis-plus:
     db-config:
       # 字段验证策略之 select
       select-strategy: not_empty
-
-#---
-#server:
-#  port: 8083
-#spring:
-#  profiles: prod

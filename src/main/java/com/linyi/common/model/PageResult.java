@@ -36,9 +36,4 @@ public class PageResult<T> {
      * 总记录数
      */
     private long total;
-
-    /**
-     * 总页数
-     */
-    private long totalPages;
 }
